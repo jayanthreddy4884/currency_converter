@@ -1,0 +1,8 @@
+from forex_python.converter import CurrencyRates
+c=CurrencyRates()
+amt=int(input("enter the amount you want to Convert : "))
+from_currency=input("From\n").upper()
+to_currency=input("To\n").upper()
+print(from_currency,"to ",to_currency)
+result=c.convert(from_currency,to_currency,amt)
+print(result)
